@@ -1,6 +1,6 @@
 # Test cases
 
-The exact inputs, steps, use-case IDs, requirement IDs and expected results are preserved on pages 102–128 of the [team test design](../../requirements/SRS/T097.pdf#page=102). Pages 146–153 contain the team's traceability matrix.
+The test IDs below match the team's Assignment 8 design. The executable cases contain the inputs and expected results.
 
 | Detailed use case | Test IDs | Checks |
 | --- | --- | --- |

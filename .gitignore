@@ -5,5 +5,11 @@ dist/
 *.sqlite-wal
 *.accounts.json
 sdL/
+T097.pdf
+t097_extracted.txt
+Assignment*.pdf
+Lab Assignment *.docx
+CS314 SDL*.pdf
+*[Vv]iva*[Cc]heat*[Ss]heet*
 .env
 .DS_Store

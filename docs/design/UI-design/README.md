@@ -9,4 +9,4 @@
 | UI-05 | Overview shows goals, initiatives, incomplete milestones and KPI comparisons. Management can filter and refresh. |
 | UI-06 | Select a goal title to inspect its initiatives, then an initiative title to inspect its milestones and KPIs. |
 
-Role-specific navigation also exposes the goal, milestone and KPI registers, approval queue, notifications, reports and account administration. The original screen designs appear on pages 60–67 of the [SRS](../../requirements/SRS/T097.pdf#page=60).
+Role-specific navigation also exposes the goal, milestone and KPI registers, approval queue, notifications, reports and account administration.

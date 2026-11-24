@@ -1,6 +1,6 @@
 # Test plan
 
-The Assignment 8 design appears on pages 94–160 of the [SRS](../../requirements/SRS/T097.pdf#page=94). Its three detailed use cases supply 40 numbered scenarios.
+The team's Assignment 8 test design supplies 40 numbered scenarios across three detailed use cases.
 
 The automated integration suite exercises the actual Express routes and SQLite persistence. TD-01 to TD-03 are recreated for each case. Logical users are mapped to registered roles and ownership rather than assuming the SRS's example identifiers are database keys. The controlled reference date is 19 November 2026 in the campus time zone. Numeric expectations use the [documented calculation choices](../../design/detailed-design/README.md).
 

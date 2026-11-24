@@ -40,7 +40,6 @@ Open **http://localhost:4000**. On first startup the server creates a local SQLi
 
 ## Project materials
 
-- [Combined team SRS and Assignments 1–8](docs/requirements/SRS/T097.pdf) and [assignment index](assignments/README.md)
 - [Architecture](docs/design/architecture/README.md), [detailed design and SRS decisions](docs/design/detailed-design/README.md) and [screen map](docs/design/UI-design/README.md)
 - [Test plan](docs/testing/test-plan/README.md), [case mapping](docs/testing/test-cases/README.md) and [execution results](docs/testing/test-results/README.md)
 - [Development and deployment guide](docs/deployment/deployment-guide/README.md)

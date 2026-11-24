@@ -1,6 +1,6 @@
 # Detailed design and traceability
 
-The approved source is the [team SRS](../../requirements/SRS/T097.pdf). Pages 74–92 describe component operations and traceability. The release uses the following implementation choices for points the static review left open on pages 157–158. These choices are available for team or instructor review.
+The release uses the following implementation choices for points left open in the team SRS. These choices are available for team or instructor review.
 
 | SRS topic | Release behaviour |
 | --- | --- |

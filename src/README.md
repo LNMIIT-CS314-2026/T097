@@ -1,3 +1,3 @@
-# Source Code
+# Client source
 
-Project source code should be maintained in this directory.
+`App.jsx` handles sign-in, session expiry, role-based navigation and data refresh. `api.js` calls the same-origin Express API. Shared inputs, dialogs and tables live in `components/`. Workflow-specific views live in `pages/`. The API and persistence implementation are in [server](../server/).

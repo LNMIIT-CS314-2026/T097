@@ -1,4 +1,4 @@
-/* ===== BASIC PROTOTYPE STYLES ===== */
+/* Shared layout for the institutional planning workspace. */
 /* Strategic Plan Monitor — CS314 Team T097 */
 
 :root {
@@ -1747,4 +1747,45 @@ textarea:focus-visible {
   .form-footer { flex-direction: column; align-items: stretch; }
   .form-footer .button { width: 100%; }
   .assigned-list { grid-template-columns: 1fr; }
+}
+.signin { min-height:100vh; padding:24px; display:grid; place-items:center; background:#eef2f5; }
+.signin-card { width:min(420px,100%); padding:36px; display:grid; gap:17px; border-top:4px solid #315a70; }
+.signin-card h1,.page-content h1 { margin:0; font-size:clamp(1.4rem,3vw,1.85rem); letter-spacing:-.025em; }
+.signin-card p { margin:0; color:#52656d; }
+.signin-brand { color:#335c6a; font-weight:700; font-size:1.05rem; }
+.work-panel { padding:18px 22px; }
+.work-panel > p { color:#465963; }
+.panel > .section-heading { padding:12px 16px 0; }
+.work-panel > .section-heading { padding:0; }
+.panel > .goal-list { padding:0 16px 12px; }
+.row-actions,.report-controls { display:flex; align-items:center; flex-wrap:wrap; gap:12px; }
+.report-controls { align-items:flex-end; }
+.signin-card .field input,.field select,.filter-select { min-height:36px; }
+.form-grid > .full-field { grid-column:1/-1; }
+.field input[type=checkbox] { width:20px; min-height:20px; align-self:flex-start; }
+.work-panel > .button { margin-top:12px; }
+.page-content a.button { text-decoration:none; }
+.sidebar .nav-item { text-align:left; }
+.sidebar .sidebar-user-copy { padding:12px 8px; }
+.goal-row-head { justify-content:space-between; }
+.panel > .empty-state { margin:0; }
+@media (max-width:960px) {
+  .app-shell { flex-direction:column; }
+  .sidebar { width:100%; min-height:0; padding:10px 14px; }
+  .sidebar .brand-lockup { padding:0 0 8px; }
+  .sidebar .brand-mark { margin:0; }
+  .sidebar .brand-name { display:block; }
+  .sidebar .nav-list { display:flex; flex-direction:row; overflow:auto; gap:4px; }
+  .sidebar .nav-item { flex-shrink:0; width:auto; }
+  .sidebar .sidebar-spacer { display:none; }
+  .sidebar .sidebar-user-copy { display:none; }
+  .table-controls { flex-wrap:wrap; }
+}
+@media print {
+  @page { size:landscape; margin:12mm; }
+  .sidebar,.topbar,.page-content > :not(.printable-report),.printable-report .row-actions,.toast-message { display:none!important; }
+  .app-shell,.main-area,.page-content,.page-wrap,.printable-report,.printable-report .table-scroll { display:block; width:auto; padding:0; margin:0; overflow:visible; border:0; }
+  .printable-report .data-table { min-width:0; width:100%; }
+  tr { break-inside:avoid; }
+  body { background:white; }
 }

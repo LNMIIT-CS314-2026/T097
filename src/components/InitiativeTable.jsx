@@ -18,7 +18,7 @@ export default function InitiativeTable({ initiatives, onView, onEdit, canEdit =
               <td><span className={item.isDelayed ? 'date-overdue' : 'date-text'}>{new Date(`${item.dueDate}T12:00:00`).toLocaleDateString('en-IN', { day: '2-digit', month: 'short', year: 'numeric' })}</span></td>
               <td><div className="progress-cell"><div className="progress-caption"><strong>{item.progress}%</strong></div><ProgressBar value={item.progress} /></div></td>
               <td><StatusPill status={item.displayStatus} /></td>
-              {canEdit && <td><button className="text-button" onClick={() => onEdit?.(item)}>Edit</button></td>}
+              {canEdit && <td>{!['Completed','Cancelled'].includes(item.status) && item.review !== 'Under Review' && <button className="text-button" onClick={() => onEdit?.(item)}>Edit</button>}</td>}
             </tr>
           ))}
         </tbody>

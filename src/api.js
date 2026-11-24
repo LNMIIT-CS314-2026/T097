@@ -1,22 +1,17 @@
-async function request(path, { method = 'GET', body, role = 'management' } = {}) {
-  const response = await fetch(`/api${path}`, {
+export async function request(path, method = 'GET', body) {
+  const response = await fetch('/api' + path, {
     method,
-    headers: {
-      'Content-Type': 'application/json',
-      'X-Demo-Role': role,
-    },
-    ...(body !== undefined ? { body: JSON.stringify(body) } : {}),
+    credentials: 'same-origin',
+    ...(method === 'GET'
+      ? {}
+      : { headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body ?? {}) }),
   });
-  const payload = await response.json().catch(() => ({}));
-  if (!response.ok) throw new Error(payload.error || `Request failed (${response.status})`);
-  return payload;
+  const result = await response.json().catch(() => ({}));
+  if (!response.ok) {
+    const error = new Error(result.error || 'The server could not complete this request.');
+    error.status = response.status;
+    if (response.status === 401 && path !== '/login') window.dispatchEvent(new Event('session-ended'));
+    throw error;
+  }
+  return result;
 }
-
-export const api = {
-  bootstrap: () => request('/bootstrap'),
-  createInitiative: (body, role) => request('/initiatives', { method: 'POST', body, role }),
-  updateInitiative: (id, body, role) => request(`/initiatives/${id}`, { method: 'PATCH', body, role }),
-  updateProgress: (id, body, role) => request(`/initiatives/${id}/progress`, { method: 'POST', body, role }),
-  updateMilestone: (id, body, role) => request(`/milestones/${id}`, { method: 'PATCH', body, role }),
-  reset: () => request('/reset', { method: 'POST' }),
-};

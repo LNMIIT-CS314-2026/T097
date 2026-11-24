@@ -1,0 +1,288 @@
+TAP version 13
+# Subtest: TC-001 valid credentials open planning workspace
+ok 1 - TC-001 valid credentials open planning workspace
+  ---
+  duration_ms: 700.8613
+  type: 'test'
+  ...
+# Subtest: TC-002 invalid credentials disclose no account details
+ok 2 - TC-002 invalid credentials disclose no account details
+  ---
+  duration_ms: 138.3504
+  type: 'test'
+  ...
+# Subtest: TC-003 create a linked Planned initiative with zero progress
+ok 3 - TC-003 create a linked Planned initiative with zero progress
+  ---
+  duration_ms: 60.3403
+  type: 'test'
+  ...
+# Subtest: TC-004 edit title and description, retaining links and progress
+ok 4 - TC-004 edit title and description, retaining links and progress
+  ---
+  duration_ms: 38.5321
+  type: 'test'
+  ...
+# Subtest: TC-005 rejects missing title
+ok 5 - TC-005 rejects missing title
+  ---
+  duration_ms: 16.9362
+  type: 'test'
+  ...
+# Subtest: TC-006 rejects missing goal
+ok 6 - TC-006 rejects missing goal
+  ---
+  duration_ms: 18.5276
+  type: 'test'
+  ...
+# Subtest: TC-007 rejects inactive goal
+ok 7 - TC-007 rejects inactive goal
+  ---
+  duration_ms: 16.3055
+  type: 'test'
+  ...
+# Subtest: TC-008 rejects unknown owner
+ok 8 - TC-008 rejects unknown owner
+  ---
+  duration_ms: 30.4187
+  type: 'test'
+  ...
+# Subtest: TC-009 rejects deadline before start
+ok 9 - TC-009 rejects deadline before start
+  ---
+  duration_ms: 17.5907
+  type: 'test'
+  ...
+# Subtest: TC-010 activation requires an assigned owner
+ok 10 - TC-010 activation requires an assigned owner
+  ---
+  duration_ms: 61.3996
+  type: 'test'
+  ...
+# Subtest: TC-011 owner has no initiative creation permission
+ok 11 - TC-011 owner has no initiative creation permission
+  ---
+  duration_ms: 18.647
+  type: 'test'
+  ...
+# test write failure
+# Subtest: TC-012 creation persistence failure preserves original records
+ok 12 - TC-012 creation persistence failure preserves original records
+  ---
+  duration_ms: 13.3144
+  type: 'test'
+  ...
+# Subtest: TC-013 owner progress persists and appears on management dashboard
+ok 13 - TC-013 owner progress persists and appears on management dashboard
+  ---
+  duration_ms: 44.1739
+  type: 'test'
+  ...
+# Subtest: TC-014 initiative boundary -1
+ok 14 - TC-014 initiative boundary -1
+  ---
+  duration_ms: 13.637
+  type: 'test'
+  ...
+# Subtest: TC-015 initiative boundary 0
+ok 15 - TC-015 initiative boundary 0
+  ---
+  duration_ms: 20.1577
+  type: 'test'
+  ...
+# Subtest: TC-016 initiative boundary 1
+ok 16 - TC-016 initiative boundary 1
+  ---
+  duration_ms: 32.5445
+  type: 'test'
+  ...
+# Subtest: TC-017 initiative boundary 99
+ok 17 - TC-017 initiative boundary 99
+  ---
+  duration_ms: 38.8939
+  type: 'test'
+  ...
+# Subtest: TC-018 initiative boundary 100
+ok 18 - TC-018 initiative boundary 100
+  ---
+  duration_ms: 27.9956
+  type: 'test'
+  ...
+# Subtest: TC-019 initiative boundary 101
+ok 19 - TC-019 initiative boundary 101
+  ---
+  duration_ms: 34.5102
+  type: 'test'
+  ...
+# Subtest: TC-020 another owner cannot change the initiative
+ok 20 - TC-020 another owner cannot change the initiative
+  ---
+  duration_ms: 15.2637
+  type: 'test'
+  ...
+# Subtest: TC-021 session required to submit progress
+ok 21 - TC-021 session required to submit progress
+  ---
+  duration_ms: 13.6292
+  type: 'test'
+  ...
+# Subtest: TC-022 invalid initiative status
+ok 22 - TC-022 invalid initiative status
+  ---
+  duration_ms: 16.5261
+  type: 'test'
+  ...
+# Subtest: TC-023 progress and its associated milestone saved together
+ok 23 - TC-023 progress and its associated milestone saved together
+  ---
+  duration_ms: 15.4402
+  type: 'test'
+  ...
+# Subtest: TC-024 invalid child update leaves both records intact
+ok 24 - TC-024 invalid child update leaves both records intact
+  ---
+  duration_ms: 14.4185
+  type: 'test'
+  ...
+# Subtest: TC-025 invalid child update leaves both records intact
+ok 25 - TC-025 invalid child update leaves both records intact
+  ---
+  duration_ms: 16.1397
+  type: 'test'
+  ...
+# Subtest: TC-026 incomplete required milestone prevents closure
+ok 26 - TC-026 incomplete required milestone prevents closure
+  ---
+  duration_ms: 15.5743
+  type: 'test'
+  ...
+# Subtest: TC-027 late update persists and produces a delay notification
+ok 27 - TC-027 late update persists and produces a delay notification
+  ---
+  duration_ms: 42.6071
+  type: 'test'
+  ...
+# Subtest: TC-028 consolidated goal, initiative, milestone and KPI overview
+ok 28 - TC-028 consolidated goal, initiative, milestone and KPI overview
+  ---
+  duration_ms: 20.8814
+  type: 'test'
+  ...
+# Subtest: TC-029 current KPI compared with target
+ok 29 - TC-029 current KPI compared with target
+  ---
+  duration_ms: 30.4631
+  type: 'test'
+  ...
+# Subtest: TC-030 missing current KPI value stays unavailable
+ok 30 - TC-030 missing current KPI value stays unavailable
+  ---
+  duration_ms: 13.3491
+  type: 'test'
+  ...
+# Subtest: TC-031 initiative and milestone deadline 18 November
+ok 31 - TC-031 initiative and milestone deadline 18 November
+  ---
+  duration_ms: 20.6722
+  type: 'test'
+  ...
+# Subtest: TC-032 initiative and milestone deadline 19 November
+ok 32 - TC-032 initiative and milestone deadline 19 November
+  ---
+  duration_ms: 42.2215
+  type: 'test'
+  ...
+# Subtest: TC-033 initiative and milestone deadline 20 November
+ok 33 - TC-033 initiative and milestone deadline 20 November
+  ---
+  duration_ms: 29.1688
+  type: 'test'
+  ...
+# Subtest: TC-034 completed work is not overdue
+ok 34 - TC-034 completed work is not overdue
+  ---
+  duration_ms: 62.405
+  type: 'test'
+  ...
+# Subtest: TC-035 empty plan returns empty collections
+ok 35 - TC-035 empty plan returns empty collections
+  ---
+  duration_ms: 14.5914
+  type: 'test'
+  ...
+# Subtest: TC-036 unknown dashboard filter rejected
+ok 36 - TC-036 unknown dashboard filter rejected
+  ---
+  duration_ms: 7.0665
+  type: 'test'
+  ...
+# Subtest: TC-037 owner denied institution-wide view
+ok 37 - TC-037 owner denied institution-wide view
+  ---
+  duration_ms: 25.7331
+  type: 'test'
+  ...
+# Subtest: TC-038 management view requires login
+ok 38 - TC-038 management view requires login
+  ---
+  duration_ms: 12.9428
+  type: 'test'
+  ...
+# Subtest: TC-039 detail records follow goal and initiative relationships
+ok 39 - TC-039 detail records follow goal and initiative relationships
+  ---
+  duration_ms: 34.1313
+  type: 'test'
+  ...
+# KPIs retrieval failed: no such table: kpis
+# Subtest: TC-040 isolated KPI retrieval failure preserves available sections
+ok 40 - TC-040 isolated KPI retrieval failure preserves available sections
+  ---
+  duration_ms: 19.9793
+  type: 'test'
+  ...
+# Subtest: failed closure rolls back a simultaneous child change
+ok 41 - failed closure rolls back a simultaneous child change
+  ---
+  duration_ms: 18.6793
+  type: 'test'
+  ...
+# Subtest: simultaneous owner saves retain each history entry and a consistent final state
+ok 42 - simultaneous owner saves retain each history entry and a consistent final state
+  ---
+  duration_ms: 25.4964
+  type: 'test'
+  ...
+# Subtest: scheduled reminders reach the assigned owner and department head once per deadline event
+ok 43 - scheduled reminders reach the assigned owner and department head once per deadline event
+  ---
+  duration_ms: 73.8515
+  type: 'test'
+  ...
+# Subtest: planner, management, owner and KPI officer complete a new plan workflow
+ok 44 - planner, management, owner and KPI officer complete a new plan workflow
+  ---
+  duration_ms: 209.6696
+  type: 'test'
+  ...
+# Subtest: department scope, report permissions, snapshot and Excel export
+ok 45 - department scope, report permissions, snapshot and Excel export
+  ---
+  duration_ms: 253.2166
+  type: 'test'
+  ...
+# Subtest: admin creates and changes an account, records audit, revokes prior sessions
+ok 46 - admin creates and changes an account, records audit, revokes prior sessions
+  ---
+  duration_ms: 250.5645
+  type: 'test'
+  ...
+1..46
+# tests 46
+# suites 0
+# pass 46
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 3832.8091

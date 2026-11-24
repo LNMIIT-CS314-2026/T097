@@ -1,0 +1,29 @@
+{
+  "name": "t097-strategic-plan-monitoring-dashboard",
+  "version": "0.2.0",
+  "private": true,
+  "description": "React + Express + SQLite prototype for CS314 Team T097",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k \"npm:server:dev\" \"npm:client:dev\"",
+    "server:dev": "node --disable-warning=ExperimentalWarning --watch server/index.mjs",
+    "client:dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "start": "node --disable-warning=ExperimentalWarning server/index.mjs",
+    "check": "node --check server/index.mjs && node --check server/db.mjs && node --check server/repositories.mjs && node --check server/services/strategicPlanService.mjs && node --check src/api.js && node --check vite.config.js",
+    "test:smoke": "node --disable-warning=ExperimentalWarning server/services/smoke-test.mjs"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.2",
+    "concurrently": "^9.2.0",
+    "vite": "^8.3.5"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}
